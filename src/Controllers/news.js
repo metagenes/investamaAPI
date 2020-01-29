@@ -15,7 +15,7 @@ const model = require('../Models/news'),
         if (req.body.sumber == null || req.body.sumber === "") return response.error(res, "sumber can't be empty");
         if (req.body.isi == null || req.body.isi === "") return response.error(res, "isi can't be empty");
         if (req.body.img_url == null || req.body.img_url === "") return response.error(res, "img_url can't be empty");
-        if (req.body.penulis == null || req.body.penulis === "") return response.error(res, "penulis can't be empty");
+        if (req.body.media == null || req.body.media === "") return response.error(res, "media can't be empty");
         if (req.body.date == null || req.body.date === "") return response.error(res, "date can't be empty");
 
             model
