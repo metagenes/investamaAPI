@@ -24,5 +24,12 @@ const model = require('../Models/news'),
                 response.success(res, result);
             }).catch(err => response.error(res, err));
         }
-    
+
+    exports.patchNews = (req, res) => {
+            model
+            .patchNews(req)
+                .then(result => {
+                    response.success(res, result);
+                }).catch(err => response.error(res, err));
+            }
  

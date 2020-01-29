@@ -8,5 +8,5 @@ const Router = express();
 
 Router.get('/', controller.getNews);
 Router.post('/', controller.postNews);
-Router.patch('/', controller.patchNews);
+Router.patch('/:id_news', controller.patchNews);
 module.exports = Router;
