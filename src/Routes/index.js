@@ -1,6 +1,7 @@
 'use-strict';
 
 const express = require('express'),
+    economy = require('./economy'),
     news = require('./news');
 const Router = express.Router();
 
@@ -13,6 +14,7 @@ Router.get('/', (req, res) => {
 
 
 Router.use('/news', news);
+Router.use('/economy', economy);
 
 
 
