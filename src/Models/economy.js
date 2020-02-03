@@ -31,7 +31,7 @@ exports.patchEconomy = req => {
   };
   const id_news = req.params.id_news;
     return new Promise((resolve, reject) => {
-        conn.query('update economy SET ? where id = ?', [body,id_news],
+        conn.query('update from economy SET ? where id = ?', [body,id_news],
         (err, result) => {
             if(!err) resolve(result);
             else reject(err);

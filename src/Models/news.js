@@ -31,7 +31,7 @@ exports.patchNews = req => {
   };
   const id_news = req.params.id_news;
     return new Promise((resolve, reject) => {
-        conn.query('update news SET ? where id = ?', [body,id_news],
+        conn.query('update from news SET ? where id = ?', [body,id_news],
         (err, result) => {
             if(!err) resolve(result);
             else reject(err);
